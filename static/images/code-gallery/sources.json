@@ -1,0 +1,45 @@
+{
+  "generator": "scripts/visualize_task_examples.py",
+  "assets": {
+    "pusht/teaser_fork.png": "pusht-fork.png",
+    "action_map/planning.gif": "regime-planning.gif",
+    "action_map/planning_examples.png": "regime-examples.png",
+    "action_map/all_starts_success.png": "regime-all-starts.png",
+    "action_map/all_starts.csv": "regime-all-starts.csv"
+  },
+  "planning": {
+    "kind": "actual physics replay from saved executed actions, not decoded predictions",
+    "training_seed": 0,
+    "horizon": 10,
+    "receding_horizon": 1,
+    "n_starts": 200,
+    "metrics": {
+      "O": {
+        "within_region": 80.0,
+        "cross_region": 35.0
+      },
+      "Z": {
+        "within_region": 92.0,
+        "cross_region": 61.0
+      },
+      "F": {
+        "within_region": 89.0,
+        "cross_region": 68.0
+      },
+      "LpWM": {
+        "within_region": 88.0,
+        "cross_region": 41.0
+      }
+    },
+    "selected_ids": [
+      175,
+      179,
+      148,
+      81
+    ],
+    "n_cross_region_F_win_O_fail": 35,
+    "n_O_win_F_fail": 10,
+    "selection": "q25/q50/q75 positive final-distance gaps among cross-region F-success/O-failure; median-ID reverse outcome",
+    "boundary": "Qualitative success cases; complete 200-episode denominators provided. Other training seeds are not represented."
+  }
+}
