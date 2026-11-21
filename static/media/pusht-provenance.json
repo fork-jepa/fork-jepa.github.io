@@ -1,0 +1,95 @@
+{
+  "kind": "slideshow of saved actual execution observations; not continuous footage or generated predictions",
+  "frame_interval_seconds": 0.65,
+  "source": "scripts/export_pusht_teaser.py",
+  "provenance": {
+    "status": "complete",
+    "selection": {
+      "rule": "Among T-JEPA-success/LeWM-failure development starts, sort historical min-distance reduction ascending; upper central observed example; row breaks ties",
+      "improvement_metric": "historical LeWM minimum state distance minus T-JEPA minimum state distance (not final distance)",
+      "eligible_indices": [
+        49,
+        0,
+        8,
+        34
+      ],
+      "eligible_gains": [
+        -4.320589842121677,
+        -3.803789515091328,
+        16.613991629139974,
+        27.136074699892262
+      ],
+      "selected_index": 8,
+      "episode_id": 3008,
+      "dataset_row": 362034,
+      "start_step": 8
+    },
+    "model_order": [
+      "lewm",
+      "tjepa"
+    ],
+    "checkpoint_sha256": {
+      "lewm": "48938400ae3464c9680731287f583a9cb516f55a8ec64ea13a91be47fb15b607",
+      "tjepa": "00bcc07639ccc2026d4c57dcc4651be5f1ebb7104c19b17c82a7a06462a4eb3e"
+    },
+    "source_sha256": {
+      "lewm": "bc9883bee818760d1e8585f4ab9f6f7b806976480f1a750f35951d50085b616d",
+      "tjepa": "af7f4b3eb21ebb700c4056e57ded9ead32e3db56aefee412dc6cf905dcab6a8e"
+    },
+    "planner": {
+      "num_samples": 300,
+      "n_steps": 10,
+      "topk": 30,
+      "var_scale": 1.0,
+      "horizon": 5,
+      "receding_horizon": 5,
+      "action_block": 5
+    },
+    "evaluation": {
+      "num_eval": 50,
+      "goal_offset": 25,
+      "eval_budget": 50
+    },
+    "seed": 10,
+    "device": "cuda",
+    "success": [
+      false,
+      true
+    ],
+    "final_distance": [
+      135.91623583217185,
+      138.35771796055042
+    ],
+    "distance_definition": "L2 over PushT live seven-dimensional state including agent velocity; successful termination requires position/angle thresholds, not this distance",
+    "replay_success_matches_historical": {
+      "lewm": true,
+      "tjepa": true
+    },
+    "replay_min_distance_max_error": {
+      "lewm": 0.0,
+      "tjepa": 0.0
+    },
+    "frames": "Actual executed render after every five raw control steps; terminal partial block retained, steps saved; no frames after selected termination",
+    "first_action_block": "Two first five-step blocks independently re-executed from the same restored root; successors saved as *_first_succ; exact terminal RGB validates full recorded action replay",
+    "sha256": "48105dcc6cd2567ec99d5de04edc0ec7a71825b8c8c0bd39808a3d2fd8df4b28",
+    "executed_action_replay_final_pixel_error": 0,
+    "final_position_distance": [
+      83.51035085198575,
+      19.64040415810613
+    ],
+    "final_angle_error": [
+      0.002162690250052446,
+      0.0041246907517349385
+    ],
+    "actual_executed_steps": {
+      "lewm": 50,
+      "tjepa": 22
+    }
+  },
+  "format": "GIF from saved execution observations",
+  "figures": {
+    "teaser": "figure/fig_teaser.pdf",
+    "framework": "figure/fig_overview.pdf",
+    "quotient": "figure/fig_quotient.pdf"
+  }
+}

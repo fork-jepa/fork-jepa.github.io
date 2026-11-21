@@ -1,0 +1,333 @@
+{
+  "counts": {
+    "regions": 13,
+    "cube": 12,
+    "pusht": 11,
+    "tworoom": 10
+  },
+  "total": 46,
+  "files": [
+    {
+      "task": "regions",
+      "file": "regions/action_map_planning.gif",
+      "source": "visualizations/task_examples/action_map/planning.gif",
+      "bytes": 381651,
+      "sha256": "05dec2baee9c361af99446d174043ccd285ae0a0225ce02369a43d6399d4d24b"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_000.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_000.gif",
+      "bytes": 2055289,
+      "sha256": "21bb18694482e76bc163fbeef13a5bccccad5a73b6ff1e6b783ca6a901b7d630"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_001.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_001.gif",
+      "bytes": 73627,
+      "sha256": "862112a996d373acef0f4da60dbbd7417c95fb40101e1b2548d7845cb266492b"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_004.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_004.gif",
+      "bytes": 2017060,
+      "sha256": "51a859d38d379ad9abc3a138812b79f6417755a25c8a844dd7484b0ab735540d"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_014.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_014.gif",
+      "bytes": 2051581,
+      "sha256": "4dcafc6872dd65e5b95f362a598d2694f25fccf89a3a7800cd6521cb6fc7d1bd"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_016.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_016.gif",
+      "bytes": 2159785,
+      "sha256": "3c62d38ec20849d3d350eb8b496601e51dd41569cf9ea9d6a17f302af9dcb353"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_020.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_020.gif",
+      "bytes": 1976558,
+      "sha256": "266e66b059d7cc30b892cb7707f43298953b2de373e3a33aeea0e34a51ca0cb3"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_035.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_035.gif",
+      "bytes": 2255091,
+      "sha256": "c956330f4dd57b29332c2fc2accbe4c90eb43b4b69c0641e2b23f02e9d5d8a68"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_037.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_037.gif",
+      "bytes": 2218508,
+      "sha256": "b21da06679d15eff8927d73585b5e6beac484045551890e81ed109983dbbf576"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_042.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_042.gif",
+      "bytes": 2308180,
+      "sha256": "a657283962d37bb34eec364787ef107f6c15d82ba9eb3be304cfe9c6698cad0d"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_044.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_044.gif",
+      "bytes": 2200706,
+      "sha256": "ab9dbd5aea88cd0e3bc9bd1f4afad1c5a8a330d5fef81ddca3e6b722b4bae33b"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_045.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_045.gif",
+      "bytes": 2157465,
+      "sha256": "dd7a800856c15e2e5c4a0bbe909e8d3b986253f3fa760b13438b047702a1241a"
+    },
+    {
+      "task": "cube",
+      "file": "cube/case_046.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/cube/case_046.gif",
+      "bytes": 1973914,
+      "sha256": "851d5c897c608f093a703148f8b7caa0bbda1503f7bd770a77c29aec63fa0986"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_000.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_000.gif",
+      "bytes": 872750,
+      "sha256": "4811fd131feb8752d4c3a80ae33b8dd86a14327a2f351c072a1add04a0090a6e"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_008.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_008.gif",
+      "bytes": 912884,
+      "sha256": "e119c27d15396f2116ee2425b06275647dd8ad6a2fee39760424590c672c1ad2"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_011.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_011.gif",
+      "bytes": 382085,
+      "sha256": "da9add9fe61fb3b16905c0b4a197b548d73d2b20dca33ad7e0cbe14d20c083c1"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_012.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_012.gif",
+      "bytes": 423349,
+      "sha256": "9269e725f25848ddc0473eec7c1e4459db56d8637be0d0dffe8cc08a59b8becb"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_017.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_017.gif",
+      "bytes": 787663,
+      "sha256": "031da44ecacf29ba48465eedf41c287e893db2b3f1b2e4106ed0a57231994b6d"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_022.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_022.gif",
+      "bytes": 794279,
+      "sha256": "b6b8430338e515bf44b0ff76ee2500c1417d5c52b3cf5d7e81722a50f9281eba"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_034.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_034.gif",
+      "bytes": 895932,
+      "sha256": "68765824d9cb7a82310047fb829c93c57e4a8f29dfe9f35dd7ed9b2bf709086a"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_036.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_036.gif",
+      "bytes": 405848,
+      "sha256": "96707c30bc61ed79476438b95deea8bea4f32ff90df1b1f400857a4e88005253"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_039.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_039.gif",
+      "bytes": 411235,
+      "sha256": "67c3a189c6689389704608899a107f77281d724db89f14b68304bd5200be09d7"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_046.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_046.gif",
+      "bytes": 364532,
+      "sha256": "0991c9b8e9a6f1faa080b6f87b9648744019c5391f00c1a20f828e0f678b7afa"
+    },
+    {
+      "task": "pusht",
+      "file": "pusht/case_049.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/pusht/case_049.gif",
+      "bytes": 906395,
+      "sha256": "85c08fd13c5f75d819e7cf0d017cb8bf76bf9cde6cc139acbd6eab88defe18ae"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_081.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_081.gif",
+      "bytes": 717937,
+      "sha256": "6ebcf221157f593e2b16985f15c7f2ef2385357a791351dc712d1a14fe23b777"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_102.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_102.gif",
+      "bytes": 758811,
+      "sha256": "d55621c7d4e3324501266378b0d7d3a5b9840af2068e8efd38530876e567dadc"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_104.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_104.gif",
+      "bytes": 748949,
+      "sha256": "45698d45ae927d061e51e3a16152ce1a06d655807abedb820f9046f80e2c375c"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_108.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_108.gif",
+      "bytes": 761004,
+      "sha256": "8e362f6a113acf451c5cf42bceed92f4fda92d82271bbc6bc6fc69c410f07452"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_142.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_142.gif",
+      "bytes": 751746,
+      "sha256": "0c9f3cd49c0bfb65622dbce78fa122541ef426fa7afd4e24b44a32c2499c216b"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_143.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_143.gif",
+      "bytes": 690520,
+      "sha256": "3f97945f763793bb29069c8d3ba5ab1e1b18b4707024c8f1e50965f8b65b8bf2"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_144.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_144.gif",
+      "bytes": 755774,
+      "sha256": "46d92aeaf8e33e7666f1fce32ef25964b3493f6c47327461166cf5ef964fe9df"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_148.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_148.gif",
+      "bytes": 766053,
+      "sha256": "3e3f115e505f543e41c09055ce9dec3ea66f02d8d046c181b008134a2b183ec2"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_158.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_158.gif",
+      "bytes": 760435,
+      "sha256": "4adcf4af281908dc23d3fedfba8865b4d156de0cf471d1d6c2a0e4188a8a5183"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_175.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_175.gif",
+      "bytes": 751900,
+      "sha256": "d58a58b7d17f7c9c7e5ec224301ee406817d19dd374bda268f1740377fa9acd3"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_179.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_179.gif",
+      "bytes": 769061,
+      "sha256": "7c60507b60b6a17a2be903a324dabf4ee5f5a411779d421243f2a0440292061a"
+    },
+    {
+      "task": "regions",
+      "file": "regions/case_186.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/regions/case_186.gif",
+      "bytes": 771747,
+      "sha256": "d6bc0ef523d092778bf262e0d62c9670327a249469acd6ffd9514ee5316bab07"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_007.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_007.gif",
+      "bytes": 864248,
+      "sha256": "3477d6deaad632986cfbd2bc6cb24cd9e36db5ffc859a0473c0dddb2341a5ae8"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_010.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_010.gif",
+      "bytes": 813744,
+      "sha256": "3b128d354c81066f7138a3ac9f9908aa6bfd6a5dc1f994d1c6d4775d6ab1a464"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_013.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_013.gif",
+      "bytes": 829047,
+      "sha256": "76ae616cea399d5087988fb1f65bfe453eebd2df9a972b9b5838da5edb62452a"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_026.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_026.gif",
+      "bytes": 820881,
+      "sha256": "75e5e3b90b25f10502be5bfa00c127a8b8df7927c4d1072c394ec76aaeb93f98"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_029.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_029.gif",
+      "bytes": 834788,
+      "sha256": "bc86bc6b30c86ae0138ddf1ceefa8c6af09f990664969b39190bda9de3b3fc85"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_033.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_033.gif",
+      "bytes": 845253,
+      "sha256": "621051a98df48d967df40bd7ec2b20268703d34a950fc6e7697468731ec52dbf"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_034.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_034.gif",
+      "bytes": 853118,
+      "sha256": "d5dd3eeed8e98592c5674018537deb8f5bab7a8517b2d59abac84bfeba47d37d"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_035.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_035.gif",
+      "bytes": 877145,
+      "sha256": "5d171f10cfe7d8b37926e0b397fda9863b1a1c7108a4df5c5c55922fa46ae5b3"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_036.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_036.gif",
+      "bytes": 773098,
+      "sha256": "d81d98ecd4d88002804ae44550b32b6de47f47ec20ed7aa02e97f66fa4fcba9e"
+    },
+    {
+      "task": "tworoom",
+      "file": "tworoom/case_037.gif",
+      "source": "visualizations/task_examples/advantage_gifs_20261118/tworoom/case_037.gif",
+      "bytes": 856811,
+      "sha256": "a0b1317c5e2e0e0dcb3c13a01cd2459dfaf16abaf0922a13d4a0cd13b1a28e18"
+    }
+  ]
+}
