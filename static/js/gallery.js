@@ -1,37 +1,79 @@
 (() => {
   const gallery = window.forkGallery;
   const image = document.getElementById('demo-image');
-  const select = document.getElementById('demo-case');
+  const strip = document.getElementById('demo-scenes');
   const play = document.getElementById('demo-play');
-  const replay = document.getElementById('demo-replay');
   const caption = document.getElementById('demo-caption');
-  const source = document.getElementById('demo-source');
+  const pause = document.getElementById('demo-pause');
+  const title = document.getElementById('demo-title');
+  const count = document.getElementById('demo-count');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const taskButtons = [...document.querySelectorAll('[data-task]')];
   let task = 'tworoom';
-  let playing = !reducedMotion.matches;
-  const buttons = [...document.querySelectorAll('[data-task]')];
-  function render(restart = false) {
+  let selected = 0;
+  let requestId = 0;
+  const updatePlayback = () => {
+    play.disabled = !image.paused;
+    pause.disabled = image.paused;
+  };
+  async function startPlayback() {
+    const id = ++requestId;
+    try { await image.play(); } catch (error) {
+      if (id === requestId && error.name !== 'AbortError') caption.textContent = 'Press Play to start this recording.';
+    }
+    if (id === requestId) updatePlayback();
+  }
+  const sceneLabel = (example, index) => example.file.includes('action_map') ? 'Trajectory overview' : 'Start & goal ' + String(index + 1).padStart(2, '0');
+  function render() {
     const group = gallery[task];
-    const example = group.cases[Number(select.value) || 0];
+    const example = group.cases[selected];
+    const label = sceneLabel(example, selected);
     const path = 'static/media/gallery/' + example.file;
-    image.src = playing ? path + (restart ? '?replay=' + Date.now() : '') : path.replace(/\.gif$/, '.jpg');
-    image.alt = group.name + ': ' + example.label + ', recorded simulator execution with embedded model labels';
-    caption.textContent = group.name + ' · ' + example.label + ' · ' + group.cases.length + ' examples';
-    source.href = path;
-    play.textContent = playing ? 'Pause animation' : 'Play animation';
-    play.setAttribute('aria-pressed', String(playing));
+    ++requestId;
+    image.pause();
+    image.poster = path.replace(/\.gif$/, '.jpg');
+    image.src = path.replace(/\.gif$/, '.mp4');
+    image.setAttribute('aria-label', group.name + ', ' + label + ': recorded planning execution with model labels');
+    image.load();
+    title.textContent = group.name + ' · ' + label;
+    caption.textContent = group.description + ' · Same start and goal, compared across models';
+    count.textContent = (selected + 1) + ' / ' + group.cases.length + ' scenes';
+    updatePlayback();
+    if (!reducedMotion.matches) startPlayback();
+    [...strip.children].forEach((button, index) => button.setAttribute('aria-pressed', String(index === selected)));
+  }
+  function chooseScene(index) {
+    selected = (index + gallery[task].cases.length) % gallery[task].cases.length;
+    render();
   }
   function chooseTask(key) {
     task = key;
-    select.replaceChildren(...gallery[key].cases.map((example, index) => new Option(example.label, index)));
-    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.task === task)));
+    selected = 0;
+    strip.replaceChildren(...gallery[key].cases.map((example, index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'example-tile';
+      button.setAttribute('aria-label', gallery[key].name + ': ' + sceneLabel(example, index));
+      button.setAttribute('aria-controls', 'demo-image');
+      const preview = document.createElement('img');
+      preview.src = 'static/media/gallery/' + example.file.replace(/\.gif$/, '.jpg');
+      preview.alt = '';
+      preview.loading = 'lazy';
+      const label = document.createElement('span');
+      label.textContent = sceneLabel(example, index);
+      button.append(preview, label);
+      button.addEventListener('click', () => chooseScene(index));
+      return button;
+    }));
+    strip.scrollLeft = 0;
+    taskButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.task === task)));
     render();
   }
-  buttons.forEach(button => button.addEventListener('click', () => chooseTask(button.dataset.task)));
-  select.addEventListener('change', () => render());
-  play.addEventListener('click', () => { playing = !playing; render(); });
-  replay.addEventListener('click', () => { playing = true; render(true); });
-  reducedMotion.addEventListener('change', event => { if (event.matches) { playing = false; render(); } });
-  image.addEventListener('error', () => { caption.textContent = 'This clip could not load. Try another example or open the GIF directly.'; });
+  taskButtons.forEach(button => button.addEventListener('click', () => chooseTask(button.dataset.task)));
+  play.addEventListener('click', startPlayback);
+  pause.addEventListener('click', () => { ++requestId; image.pause(); updatePlayback(); });
+  for (const event of ['play', 'pause', 'ended']) image.addEventListener(event, updatePlayback);
+  reducedMotion.addEventListener('change', event => { if (event.matches) { ++requestId; image.pause(); } });
+  image.addEventListener('error', () => { caption.textContent = 'This recording could not load. Choose another scene or try again.'; });
   chooseTask(task);
 })();
